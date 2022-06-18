@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BigBags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bozhidar Sotirov">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/382fe053ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lightbox/lightbox.min.css">
+</head>
+
+<body>
+    <!------------ Navigation Bar ------------->
+    <header>
+        <div style="max-width: 85%" class="container-md">
+            <nav style="padding-top:15px;" class="navbar navbar-dark navbar-expand-md">
+                <div class="navbar-brand">
+                    <a href="index.html" style="text-decoration: none; color: aliceblue; ">
+                        <h5 class="navBigBags " style="font-size: 30px; padding-right: 20px; ">Big Bags</h5>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-light " href="index.html">Начало</a></li>
+                        <li class="nav-item"><a class="nav-link text-light " href="gallery.html">Галерия</a></li>
+                        <li class="nav-item"><a class="nav-link text-light " href="contacts.html ">Контакти</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!---------------- Header ----------------->
+    <div style="background-image: url('images/magazin.jpg');" class="container-fluid cvqt">
+        <div class="container">
+            <div class="row">
+                <div style="line-height: 30px; " class="col-lg-12 mein">
+                    <h2 class="zaglavie">Магазин за<br>Куфари и Чанти <big>Big Bags</big></h2><br>
+                    <span id="rabotnoVreme">Отворено всеки ден от 10:00 до 20:00 !!!</span>
+                    <br>
+                    <a href="contacts.html " class="btn btn-outline-light mestopol ">Местоположение &#8594; <i class="fa fa-suitcase "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------- Kakvo predlagame --------------------->
+
+    <center>
+        <h2 style="margin-top: 8vh; margin-bottom: 2vh; font-weight: bold;" class="title" style="color:black;">Какво предлагаме</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="predlagame/producti.jpg" width="65%">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
+                    <p style="text-align: right;" id="desk"><strong style="font-size: 27px;">Куфари и Сакове</strong><br>Предлагаме качествени, леки и надеждни куфари и сакове за всяко пътуване.</p>
+                </div>
+            </div>
+
+            <div class="row reverse">
+                <div style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
+                    <p style="text-align: left;" id="desk"><strong style="font-size: 27px;">Раници</strong><br>
+                        <!--Раници за университет, за планина, на пътуване, раници за малки, както и за големи. Здрави и издръжливи раници.-->Раници от памук и брезент. За училище, спорт и бизнес.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="predlagame/ranica.jpeg" width="55%">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="predlagame/palaska.jpg" width="60%">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
+                    <p style="text-align: right;" id="desk"><strong style="font-size: 27px;">Паласки</strong><br>Дамски, мъжки, децки паласки. Разнообразни цветове и модели.</p>
+                </div>
+            </div>
+
+            <div style="margin: 8vh 0;" class="row">
+                <div class="col-md-12">
+                    <big><strong>Още: Колани за куфари, Портмонета, Чадъри, Катинари, Несесери...</strong></big>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <!--------------- Свържете се ---------------->
+    <div class="container-fluid cherveno">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 id="svTxt" style="color: rgb(255, 255, 255); font-weight: bold; margin: 10vh 0;">Чувствайте се свободни да се свържете с нас по всяко време.</h1>
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;" class="col-md-4">
+                    <a href="contacts.html">
+                        <button id="sv" style="border: none; font-weight: bold; font-size: 1.3vw; border-radius:  50px;" class=" btn btn-light">Свържете се с нас</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------ Featured Products ------------>
+    <div class="container-md">
+        <h2 id="Link_Kym_Products" class="title zaglavie_products">Примерни Продукти</h2>
+        <div style="text-align: center;" class="row">
+            <div style="margin-top:15px; margin-bottom:10px;" class="col-sm-3 product">
+                <a href="images/DSC00498.jpg" data-lightbox="myLightBox" data-title="">
+                    <img src="images/DSC00498.jpg" id="img_products" style="border-radius: 10px; box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);">
+                </a>
+                <h4 class="productName" style="margin-top:10px; ">Куфар <strong>Titan</strong></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                </div>
+                <p style="font-size:15px;">60 лева</p>
+            </div>
+
+            <div style="margin-top:15px; margin-bottom:10px;" class="col-sm-3 product">
+                <a href="images/DSC00597.jpg" data-lightbox="myLightBox" data-title="">
+                    <img src="images/DSC00597.jpg" id="img_products" style="border-radius: 10px; box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);">
+                </a>
+                <h4 class="productName" style="margin-top:10px;">Куфар <strong>TravelKing</strong></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p style="font-size:15px;">40 лева</p>
+            </div>
+
+            <div style="margin-top:15px; margin-bottom:10px;" class="col-sm-3 product">
+                <a href="images/DSC00492.jpg" data-lightbox="myLightBox" data-title="">
+                    <img src="images/DSC00492.jpg" id="img_products" style="border-radius: 10px; box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%); ">
+                </a>
+                <h4 class="productName " style="margin-top:10px; ">Куфар <strong>Grand</strong></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p style="font-size:15px; ">70 лева</p>
+            </div>
+
+            <div style="margin-top:15px;" class="col-sm-3 product">
+                <a href="images/DSC00504.jpg" data-lightbox="myLightBox" data-title="">
+                    <img src="images/DSC00504.jpg" id="img_products" style="border-radius: 10px; box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%); ">
+                </a>
+                <h4 class="productName" style="margin-top:10px;">Куфар <strong>Darin</strong></h4>
+                <div class="rating">
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                </div>
+                <p style="font-size:15px; ">45 лева</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------- Offer -------------->
+    <div class="offer">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img loading="lazy" src="images/titan-spotlight.png" class="offer-img" width="90%">
+                </div>
+                <div class="col-lg-6" style="margin-bottom: auto; margin-top: auto; display: block; ">
+                    <p style="margin-top: 30px; ">Дизайнът на впечатляващите куфари Titan Spotlight Flash</p>
+                    <h1 id="titanFlash" style="font-weight: 700; color: #323232;">Titan Spotlight Flash</h1>
+                    <small><br>Изработен от здрав ABS с карбоново покритие и с висококачествена обвивка от полиран алуминий.<br>При това придвижването с тях е изключително лесно, тъй като са снабдени с големи, гладко въртящи се двойни колела.</small>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------- Testimonial ------------>
+    <section>
+        <div class="testimonial">
+            <div class="container-lg ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="margin-top: 0 !important;" class="title zaglavie_products">Мнението на клиентите ни</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 mnenie1" style="margin-top: 30px; ">
+                        <div class="mneniq text-center" style="margin-right: auto; margin-left: auto; display: block; ">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Богато разнообразие от куфари и чанти. Страхотна консултантка.Едно от най-добрите места в града за закупуване на пътна чанта. </p>
+                            <div class="rating ">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                            </div>
+                            <img loading="lazy" src="images/portrait1.jpg">
+                            <h4 style="color: black; font-size: 20px; margin-top: 12px;">Ангел</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4" style="margin-top: 30px; ">
+                        <div class="mneniq " style="margin-right: auto; margin-left: auto; display: block; ">
+                            <i class="fa fa-quote-left "></i>
+                            <p>Страхотен избор, разумни цени. Страхотен приятелски настроен персонал. Абсолютно препоръчвам!</p>
+                            <br>
+                            <div class="rating ">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <img loading="lazy" src="images/portrait3.jpg">
+                            <h4 style="color: black; font-size: 20px; margin-top: 12px;">Преслава</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 " style="margin-top: 30px;">
+                        <div class="mneniq " style="margin-right: auto; margin-left: auto; display: block; ">
+                            <i class="fa fa-quote-left "></i>
+                            <p>Голям избор, цени по-ниски от другите магазини, удобно местоположение в центъра.</p>
+                            <br>
+                            <div class="rating ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <img loading="lazy" src="images/portrait2.jpg">
+                            <h4 style="color: black; font-size: 20px; margin-top: 12px; ">Павел</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------- Brands -------------->
+
+    <div class="brands">
+        <div class="container-sm">
+            <div style="text-align: center" class="row ">
+                <div class="col-sm-3 brands">
+                    <img loading="lazy" src="images/travelite.png">
+                </div>
+                <div class="col-sm-3 brands">
+                    <img loading="lazy" src="images/titan.jpg">
+                </div>
+                <div class="col-sm-3 brands">
+                    <img loading="lazy" src="images//golla.png">
+                </div>
+                <div class="col-sm-3 brands">
+                    <img loading="lazy" src="images/darin.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------- Footer --------------->
+
+    <footer style="text-align: center; " class="footer">
+        <div class="container-md ">
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="text-align: center; ">
+                        &#169;BigBags. Всички права запазени.
+                    </span>
+                </div>
+            </div>
+
+            <br>
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <strong style="padding-top: 200px; ">Прегледайте и</strong>
+                    <br>
+                    <a target="_blank " href="https://www.facebook.com/kufariBIGBAGS/ ">
+                        Facebook
+                    </a>
+                    <br>
+                    <a target="_blank " href="http://www.kufaribg.com/ ">
+                        Second Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="lightbox/lightbox-plus-jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+</html>

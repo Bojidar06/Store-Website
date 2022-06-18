@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+header {
+    background-color: #323232;
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.cvqt {
+    background-image: url('images/magazin.jpg');
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
+    background-size: cover;
+    background-position-y: -33vh;
+    background-blend-mode: darken;
+    margin-top: 70px;
+    padding-bottom: 10vh;
+    height: min-content !important;
+}
+
+.mestopol {
+    padding: 20px 50px !important;
+    margin: 20px 0;
+    margin-bottom: 20px;
+    font-size: 1.45rem !important;
+    border-radius: 25px !important;
+    border: 2px solid white !important;
+    text-shadow: 5px 3px 4px #000000;
+}
+
+.mestopol:hover {
+    text-shadow: none;
+}
+
+.mein {
+    margin-top: 4vh;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.zaglavie {
+    font-size: 41px;
+    text-shadow: 5px 3px 4px #000000;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+#rabotnoVreme {
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 3px 4px #000000;
+}
+
+#img_products {
+    height: 350px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #323232;
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+
+.zaglavie_products {
+    margin-top: 80px;
+    margin-bottom: 50px !important;
+    color: #323232;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: #ff523b4f;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    color: aliceblue;
+    font-weight: normal;
+}
+
+.rating .fa {
+    color: #ff523f;
+}
+
+.product {
+    transition: transform 0.5s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+
+/*  footer  */
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14;
+    padding: 60px 0 20px;
+    box-shadow: 0 -7px 12px -5px rgb(0 0 0 / 50%);
+}
+
+
+/* brands */
+
+.brands {
+    margin: 50px auto;
+}
+
+.brands img {
+    width: 160px;
+    cursor: pointer;
+}
+
+.offer {
+    background: radial-gradient(#fff, rgba(240, 61, 29, 0.500));
+    background: radial-gradient(circle, rgba(255, 29, 29, 0.404) 0%, rgba(253, 49, 49, 0.411) 57%, rgba(252, 139, 69, 0.418) 98%);
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+    margin-top: 80px;
+}
+
+.cherveno {
+    background: radial-gradient(#fff, rgba(240, 61, 29, 0.623));
+    background: radial-gradient(circle, rgba(255, 29, 29, 0.575) 0%, rgba(253, 49, 49, 0.562) 57%, rgba(252, 139, 69, 0.63) 98%);
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+}
+
+#sv {
+    padding: 2.7vh 2vw;
+    transition: 0.25s ease-in-out;
+}
+
+#sv:hover {
+    background-color: #323232;
+    color: white;
+}
+
+#svTxt {
+    font-size: 2vw;
+}
+
+small {
+    color: #555;
+}
+
+.offer-img {
+    margin-top: 75px;
+}
+
+
+/* Тestimonial */
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial img {
+    width: 60px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+}
+
+.mneniq {
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    width: 90%;
+    height: 400px;
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 40%);
+    border-radius: 6%;
+}
+
+.frame {
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 35%);
+}
+
+.mneniq:hover {
+    transform: translateY(-10px);
+}
+
+.mnenie1 {
+    margin-top: 35px;
+}
+
+
+/*  Media  */
+
+@media (max-width: 1400px) {
+    .cvqt {
+        height: min-content !important;
+        background-position-x: -5vw !important;
+        background-position-y: 0vh;
+    }
+    #svTxt {
+        font-size: 3vw;
+    }
+    #sv {
+        font-size: 2vw !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 2.1em;
+    }
+    .zaglavie {
+        font-size: 2.2em;
+        margin: 0;
+        margin-top: 7px;
+        padding: 0;
+    }
+    .mein {
+        margin: 0;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .brands {
+        margin: 10px auto;
+    }
+    .productName {
+        font-size: 22px;
+    }
+    .offer {
+        text-align: center;
+    }
+    .kufari {
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    .zaglavie_products {
+        margin-top: 50px !important;
+        margin-bottom: 25px;
+    }
+    #img_products {
+        height: auto;
+    }
+    .mneniq {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 766px) {
+    .mneniq {
+        width: 65% !important;
+    }
+    #sv {
+        font-size: 2.6vw !important;
+        margin-bottom: 60px;
+    }
+    #svTxt {
+        font-size: 4.4vw;
+        text-align: center;
+    }
+    .reverse {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    #desk {
+        margin-bottom: 60px !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .product {
+        width: 50% !important;
+        height: 50% !important;
+    }
+    .productName {
+        font-size: 17px !important;
+    }
+    .mneniq {
+        width: 85% !important;
+    }
+    .frame {
+        height: 350px;
+    }
+    .mnenie1 {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .zaglavie {
+        font-size: 7vw;
+    }
+    .mestopol {
+        padding: 16px 11px !important;
+        font-size: 4.6vw !important;
+    }
+    .navBigBags {
+        padding: 0 !important;
+        font-size: 28px !important;
+    }
+    .offer {
+        padding-top: 0 !important;
+        margin-top: 30px !important;
+    }
+    .zaglavie_products {
+        font-size: 2.1em;
+    }
+    #titanFlash {
+        font-size: 29px;
+    }
+    .offer-img {
+        margin-top: 20px !important;
+    }
+    .testimonial {
+        padding-top: 60px;
+    }
+    .mneniq {
+        height: 96% !important;
+    }
+    #sv {
+        font-size: 5vw !important;
+        margin-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #svTxt {
+        font-size: 8vw;
+        text-align: center;
+    }
+}
