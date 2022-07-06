@@ -291,6 +291,11 @@ small {
 }
 
 @media (max-width: 576px) {
+
+    #desk{
+        margin-top: 110px ;
+    }
+
     .product {
         width: 50% !important;
         height: 50% !important;
