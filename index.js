@@ -19,8 +19,8 @@ window.addEventListener('scroll', () =>{
     if(window.innerWidth <= 576)
     opisanie_ranici.style.marginTop = '30px'
 
-    predlagame_palaski.style.top = 0.02 * offset + 'px'
-    opisanie_palaski.style.top = 0.04 * -offset + 'px'
+    predlagame_palaski.style.top = 0.015 * offset + 'px'
+    opisanie_palaski.style.top = 0.03 * -offset + 'px'
 })
 
 
