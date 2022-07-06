@@ -1,21 +1,28 @@
-/*const scrollProducts = document.getElementById("producti_link");
+const predlagame_kufari = document.getElementById('predlagame_kufari')
+const opisanie_kufari = document.getElementById('opisanie_kufari')
 
-scrollProducts.addEventListener("click", function(e) {
-    e.preventDefault();
+const opisanie_ranici = document.getElementById('predlagame_ranici')
+const predlagame_ranici = document.getElementsByClassName('opisanie_ranici')[0]
 
-    //navigate to specific spot
-    const element = document.getElementById("Link_Kym_Products");
-    let position = element.offsetTop;
-    position -= 100;
-    window.scrollTo({
-        left: 0,
-        top: position,
-        behavior: 'smooth',
-    });
+const predlagame_palaski = document.getElementById('predlagame_palaski')
+const opisanie_palaski = document.getElementById('opisanie_palaski')
 
-    document.getElementsByClassName("navbar-toggler")[0].click();
-});
-*/
+
+window.addEventListener('scroll', () =>{
+    const offset = window.pageYOffset
+
+    predlagame_kufari.style.top = 0.04 * offset + 'px'
+    opisanie_kufari.style.top = 0.08 * -offset + 'px'
+
+    predlagame_ranici.style.top = 0.03 * offset + 'px'
+    opisanie_ranici.style.top = 0.06 * -offset + 'px'
+    if(window.innerWidth <= 576)
+    opisanie_ranici.style.marginTop = '30px'
+
+    predlagame_palaski.style.top = 0.02 * offset + 'px'
+    opisanie_palaski.style.top = 0.04 * -offset + 'px'
+})
+
 
 setInterval(() => {
     if (window.innerWidth <= 576)
