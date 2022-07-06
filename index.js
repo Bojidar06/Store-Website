@@ -8,7 +8,34 @@ const predlagame_palaski = document.getElementById('predlagame_palaski')
 const opisanie_palaski = document.getElementById('opisanie_palaski')
 
 
+
+window.onload =  ()=>{
+    setTimeout(()=>{
+        const header_info = document.getElementById('header_info')
+        header_info.classList.add('active')
+    }, 300)
+
+    setTimeout(()=>{
+        const first_product = document.getElementById('first_product')
+        first_product.classList.add('active')
+    }, 600)
+}
+
+
+
 window.addEventListener('scroll', () =>{
+    var reveals = document.querySelectorAll('.reveal')
+
+    for(var i = 0; i < reveals.length; ++i){
+        var windowheight = window.innerHeight
+        var revealtop = reveals[i].getBoundingClientRect().top
+        var revealpoint = 50
+
+        if(revealtop < windowheight - revealpoint)
+            reveals[i].classList.add('active')
+        else  reveals[i].classList.remove('active')
+    }
+
     const offset = window.pageYOffset
 
     predlagame_kufari.style.top = 0.04 * offset + 'px'
@@ -22,6 +49,8 @@ window.addEventListener('scroll', () =>{
     predlagame_palaski.style.top = 0.015 * offset + 'px'
     opisanie_palaski.style.top = 0.03 * -offset + 'px'
 })
+
+
 
 
 setInterval(() => {
