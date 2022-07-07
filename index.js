@@ -11,14 +11,9 @@ const opisanie_palaski = document.getElementById('opisanie_palaski')
 
 window.onload =  ()=>{
     setTimeout(()=>{
-        const header_info = document.getElementById('header_info')
-        header_info.classList.add('active')
-    }, 300)
-
-    setTimeout(()=>{
         const first_product = document.getElementById('first_product')
         first_product.classList.add('active')
-    }, 600)
+    }, 300)
 }
 
 
