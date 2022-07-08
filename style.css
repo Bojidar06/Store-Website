@@ -28,7 +28,6 @@ header {
 
 
 .cvqt {
-    clip-path: ellipse(300% 98% at 50% 0%);
     background-image: url('images/magazin.jpg');
     box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
     background-size: cover;
