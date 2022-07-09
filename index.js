@@ -24,7 +24,7 @@ window.addEventListener('scroll', () =>{
     for(var i = 0; i < reveals.length; ++i){
         var windowheight = window.innerHeight
         var revealtop = reveals[i].getBoundingClientRect().top
-        var revealpoint = 40
+        var revealpoint = 41
 
         if(revealtop < windowheight - revealpoint)
             reveals[i].classList.add('active')
