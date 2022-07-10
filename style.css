@@ -14,6 +14,24 @@ header {
     z-index: 100;
 }
 
+header .container-md{
+    max-width: 80%;
+}
+
+header .container-md nav{
+    padding-top: 15px;
+}
+
+header .container-md nav .navbar-brand a{
+    text-decoration: none; 
+    color: aliceblue; 
+}
+
+header .container-md nav .navbar-brand a h5{
+    font-size: 30px;
+    padding-right: 20px; 
+}
+
 .reveal{
     position: relative;
     transform: translateY(63px);
@@ -27,19 +45,18 @@ header {
 }
 
 
-.cvqt {
-    clip-path: ellipse(300% 98% at 50% 0%);
+.MainTop_Section_Background {
     background-image: url('images/magazin.jpg');
     box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
     background-size: cover;
-    background-position-y: -33vh;
+    background-position-y: -30vh;
     background-blend-mode: darken;
     margin-top: 70px;
     padding-bottom: 10vh;
     height: min-content !important;
 }
 
-.mestopol {
+.mestopol_button {
     padding: 20px 50px !important;
     margin: 20px 0;
     margin-bottom: 20px;
@@ -49,30 +66,35 @@ header {
     text-shadow: 5px 3px 4px #000000;
 }
 
-.mestopol:hover {
+.mestopol_button:hover {
     text-shadow: none;
 }
 
-.mein {
+.MainTop_Section_Background .container-fluid .container .row .col-lg-12 {
     margin-top: 4vh;
     text-align: center;
+    line-height: 30px;
 }
 
 img {
     max-width: 100%;
 }
 
-.zaglavie {
+.MainTop_section_title {
     font-size: 41px;
     text-shadow: 5px 3px 4px #000000;
     margin-top: 70px;
     font-weight: bold;
 }
 
-#rabotnoVreme {
+.rabotnoVreme {
     color: white;
     font-weight: bold;
     text-shadow: 5px 3px 4px #000000;
+}
+
+.rabotnoVreme:nth-child(5){
+    font-size: larger;
 }
 
 #img_products {
@@ -87,6 +109,65 @@ img {
     color: #323232;
     font-size: 3em;
     padding-bottom: 15px;
+}
+
+#what_we_offer h2{
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+#what_we_offer .container .reveal .row{
+    margin: 0.3vw 0 0.3vw 0;
+}
+
+#what_we_offer .container .row #opisanie_kufari,#what_we_offer .container .reveal div #predlagame_ranici,  #what_we_offer .container .reveal .row #opisanie_palaski{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#what_we_offer .container .row #opisanie_kufari p{
+    text-align: right;
+    font-size: 18px;
+}
+
+#what_we_offer .container .reveal div #predlagame_ranici p{
+    text-align: left;
+    font-size: 18px;
+
+}
+
+#what_we_offer .container .reveal .row .col-md-12 strong{
+	font-size: 20px;
+}
+
+.row .col-md-8 h1{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	margin: 10vh 0;
+}
+
+.row .col-md-4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row .col-md-4 button{
+ 	border: none;
+	font-weight: bold;
+	font-size: 1.3vw;
+	border-radius:  50px;
+}
+
+#what_we_offer strong{
+    font-size:  27px;
+}
+
+#what_we_offer .container .reveal .row #opisanie_palaski p{
+    text-align: right;
+    font-size: 18px;
 }
 
 .zaglavie_products {
@@ -228,7 +309,7 @@ small {
 /*  Media  */
 
 @media (max-width: 1400px) {
-    .cvqt {
+    .MainTop_Section_Background  {
         height: min-content !important;
         background-position-x: -5vw !important;
         background-position-y: 0vh;
@@ -245,7 +326,7 @@ small {
     .title {
         font-size: 2.1em;
     }
-    .zaglavie {
+    .MainTop_section_title {
         font-size: 2.2em;
         margin: 0;
         margin-top: 7px;
@@ -326,10 +407,10 @@ small {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
-    .zaglavie {
+    .MainTop_section_title {
         font-size: 7vw;
     }
-    .mestopol {
+    .mestopol_button {
         padding: 16px 11px !important;
         font-size: 4.6vw !important;
     }

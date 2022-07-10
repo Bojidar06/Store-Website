@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="lightbox/lightbox.min.css">
     <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/382fe053ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
     <!------------ Navigation Bar ------------->
     <header>
-        <div style="max-width: 85%" class="container-md">
-            <nav style="padding-top:15px;" class="navbar navbar-dark navbar-expand-md">
+        <div class="container-md">
+            <nav class="navbar navbar-dark navbar-expand-md">
                 <div class="navbar-brand">
-                    <a href="index.html" style="text-decoration: none; color: aliceblue; ">
-                        <h5 class="navBigBags " style="font-size: 30px; padding-right: 20px; ">Big Bags</h5>
+                    <a href="index.html">
+                        <h5 class="navBigBags">Big Bags</h5>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
-                 </button>
+                </button>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
@@ -40,41 +40,42 @@
     </header>
 
 
-    <!---------------- Header ----------------->    
-    <div style="background-image: url('images/magazin.jpg');" class="container-fluid cvqt">
+    <!---------------- Header ----------------->   
+    <section class = "MainTop_Section_Background"> 
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div style="line-height: 30px; " class="col-lg-12 mein">
-                    <h2 class="zaglavie">Магазин за<br>Куфари и Чанти <big>Big Bags</big></h2><br>
-                    <span id="rabotnoVreme">Отворено всеки ден от 10:00 до 20:00 !!!</span>
-                    <br><span style = "font-size: larger;" id="rabotnoVreme">Бургас, Богориди</span>
-                    <br>
-                    <a href="contacts.html " class="btn btn-outline-light mestopol ">Местоположение &#8594; <i class="fa fa-suitcase "></i></a>
+                <div class="col-lg-12">
+                    <h2 class="MainTop_section_title">Магазин за<br>Куфари и Чанти <big>Big Bags</big></h2><br>
+                    <span class ="rabotnoVreme">Отворено всеки ден от 10:00 до 20:00 !!!</span>
+                    <br><span class="rabotnoVreme">Бургас, Богориди</span><br>
+                    <a href="contacts.html " class="btn btn-outline-light mestopol_button">Местоположение &#8594; <i class="fa fa-suitcase "></i></a>
                 </div>
             </div>
         </div>
     </div>
+    </section>
 
 
     <!---------------- Kakvo predlagame --------------------->
 
     <center>
-        <div id = "first_product" class = "reveal">
-        <h2 style="margin-top: 8vh; margin-bottom: 2vh; font-weight: bold;" class="title" style="color:black;">Какво предлагаме</h2>
+        <div id = "what_we_offer" class = "reveal">
+        <h2 class="title">Какво предлагаме</h2>
         <div class="container">
-            <div style = "margin: 0.3vw 0 0.3vw 0;" class="row">
+            <div class="row">
                 <div id = "predlagame_kufari" class="col-md-6">
                     <img src="predlagame/producti.jpg" width="65%">
                 </div>
-                <div id = "opisanie_kufari" style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
-                    <p style="text-align: right; font-size: 18px;" id="desk"><strong style="font-size: 27px;">Куфари и Сакове</strong><br>Предлагаме качествени, леки и надеждни куфари и сакове за всяко пътуване.<br>Малки, средни и големи в много различни цветове.</p>
+                <div id = "opisanie_kufari" class="col-md-6 text-center">
+                    <p id="desk"><strong>Куфари и Сакове</strong><br>Предлагаме качествени, леки и надеждни куфари и сакове за всяко пътуване.<br>Малки, средни и големи в много различни цветове.</p>
                 </div>
             </div>
 
             <div class = "reveal">
-            <div style = "margin: 0.3vw 0 0.3vw 0;"  class="row reverse">
-                <div id = "predlagame_ranici" style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
-                    <p id = "desk" style="text-align: left;  font-size: 18px;"><strong style="font-size: 27px;">Раници</strong><br>
+            <div class="row reverse">
+                <div id = "predlagame_ranici" class="col-md-6 text-center">
+                    <p id = "desk" ><strong>Раници</strong><br>
                         Раници за училище, университет, спорт, за планина, за пътуване и за бизнес. Раници за малки, както и за големи.<br>Здрави и издръжливи. От памук и брезент.</p>
                 </div>
                 <div class="col-md-6 opisanie_ranici">
@@ -84,12 +85,12 @@
             </div>
 
             <div class = "reveal">
-            <div style = "margin: 0.3vw 0 0.3vw 0;" class="row">
+            <div class="row">
                 <div id = "predlagame_palaski" class="col-md-6">
                     <img src="predlagame/palaska.jpg" width="60%">
                 </div>
-                <div id = "opisanie_palaski" style="display: flex; align-items: center; justify-content: center;" class="col-md-6 text-center">
-                    <p style="text-align: right;  font-size: 18px;" id="desk"><strong style="font-size: 27px;">Паласки</strong><br>Модерни разнообразни дамски, мъжки и децки паласки.<br>Разнообразни цветове и модели.</p>
+                <div id = "opisanie_palaski" class="col-md-6 text-center">
+                    <p id="desk"><strong>Паласки</strong><br>Модерни разнообразни дамски, мъжки и децки паласки.<br>Разнообразни цветове и модели.</p>
                 </div>
             </div>
             </div>
@@ -97,7 +98,7 @@
             <div class="reveal">
             <div style="margin: 8vh 0;" class="row">
                 <div class="col-md-12">
-                    <strong style = " font-size: 20px;">Още: Колани за куфари, Портмонета, Чадъри, Катинари, Несесери...</strong>
+                    <strong>Още: Колани за куфари, Портмонета, Чадъри, Катинари, Несесери...</strong>
                 </div>
             </div>
             </div>
@@ -110,11 +111,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 id="svTxt" style="color: rgb(255, 255, 255); font-weight: bold; margin: 10vh 0;">Чувствайте се свободни да се свържете с нас по всяко време.</h1>
+                    <h1 id="svTxt">Чувствайте се свободни да се свържете с нас по всяко време.</h1>
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center;" class="col-md-4">
+                <div class="col-md-4">
                     <a href="contacts.html">
-                        <button id="sv" style="border: none; font-weight: bold; font-size: 1.3vw; border-radius:  50px;" class=" btn btn-light">Свържете се с нас</button>
+                        <button id="sv" class=" btn btn-light">Свържете се с нас</button>
                     </a>
                 </div>
             </div>
@@ -346,6 +347,7 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/382fe053ca.js" crossorigin="anonymous"></script>
     <script src="lightbox/lightbox-plus-jquery.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 </body>

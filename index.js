@@ -11,7 +11,7 @@ const opisanie_palaski = document.getElementById('opisanie_palaski')
 
 window.onload =  ()=>{
     setTimeout(()=>{
-        const first_product = document.getElementById('first_product')
+        const first_product = document.getElementById('what_we_offer')
         first_product.classList.add('active')
     }, 300)
 }
@@ -28,7 +28,6 @@ window.addEventListener('scroll', () =>{
 
         if(revealtop < windowheight - revealpoint)
             reveals[i].classList.add('active')
-        else  reveals[i].classList.remove('active')
     }
 
     const offset = window.pageYOffset
@@ -41,7 +40,7 @@ window.addEventListener('scroll', () =>{
     if(window.innerWidth <= 576)
     opisanie_ranici.style.marginTop = '30px'
 
-    predlagame_palaski.style.top = 0.015 * offset + 'px'
+    predlagame_palaski.style.top = 0.017 * offset + 'px'
     opisanie_palaski.style.top = 0.03 * -offset + 'px'
 })
 
@@ -50,8 +49,8 @@ window.addEventListener('scroll', () =>{
 
 setInterval(() => {
     if (window.innerWidth <= 576)
-        document.getElementsByClassName("zaglavie")[0].innerHTML = `
+        document.getElementsByClassName("MainTop_section_title")[0].innerHTML = `
         Магазин за<br>Куфари и Чанти <br><big>Big Bags</big>`
-    else document.getElementsByClassName("zaglavie")[0].innerHTML = `
+    else document.getElementsByClassName("MainTop_section_title")[0].innerHTML = `
         Магазин за<br>Куфари и Чанти <big>Big Bags</big>`
 }, 500)
