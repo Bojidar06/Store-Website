@@ -5,4 +5,4 @@ A website for a store or a shop. The theme of which are bags, suitcases, backpac
 ---
 
 > ### Stack Used  
-> #### HTML, CSS, SCSS, JS, BOOTSTRAP.
+> #### HTML5, CSS3, SCSS, JS, BOOTSTRAP.
