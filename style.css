@@ -1,450 +1,425 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
 }
 
 header {
-    background-color: #323232;
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 100;
+  background-color: #323232;
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.63);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+header .container-md {
+  max-width: 80%;
+}
+header .container-md nav {
+  padding-top: 15px;
+}
+header .container-md nav .navbar-brand a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header .container-md nav .navbar-brand a h5 {
+  font-size: 31px;
+  padding-right: 20px;
 }
 
-header .container-md{
-    max-width: 80%;
+.reveal {
+  position: relative;
+  transform: translateY(63px);
+  opacity: 0;
+  transition: all 1.1s ease;
 }
 
-header .container-md nav{
-    padding-top: 15px;
+.reveal.active {
+  transform: translate(0px);
+  opacity: 1;
 }
-
-header .container-md nav .navbar-brand a{
-    text-decoration: none; 
-    color: aliceblue; 
-}
-
-header .container-md nav .navbar-brand a h5{
-    font-size: 30px;
-    padding-right: 20px; 
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(63px);
-    opacity: 0;
-    transition: all 1.1s ease;
-}
-
-.reveal.active{
-    transform: translate(0px);
-    opacity: 1;
-}
-
 
 .MainTop_Section_Background {
-    background-image: url('images/magazin.jpg');
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
-    background-size: cover;
-    background-position-y: -30vh;
-    background-blend-mode: darken;
-    margin-top: 70px;
-    padding-bottom: 10vh;
-    height: min-content !important;
+  background-image: url("images/magazin.jpg");
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position-y: -30vh;
+  background-blend-mode: darken;
+  margin-top: 70px;
+  padding-bottom: 10vh;
+  height: -webkit-min-content !important;
+  height: -moz-min-content !important;
+  height: min-content !important;
+}
+.MainTop_Section_Background .container-fluid .container .row .col-lg-12 {
+  margin-top: 4vh;
+  text-align: center;
+  line-height: 30px;
 }
 
 .mestopol_button {
-    padding: 20px 50px !important;
-    margin: 20px 0;
-    margin-bottom: 20px;
-    font-size: 1.45rem !important;
-    border-radius: 25px !important;
-    border: 2px solid white !important;
-    text-shadow: 5px 3px 4px #000000;
+  padding: 20px 50px !important;
+  margin: 20px 0;
+  margin-bottom: 20px;
+  font-size: 1.45rem !important;
+  border-radius: 25px !important;
+  border: 2px solid white !important;
+  text-shadow: 5px 3px 4px #000000;
 }
-
 .mestopol_button:hover {
-    text-shadow: none;
-}
-
-.MainTop_Section_Background .container-fluid .container .row .col-lg-12 {
-    margin-top: 4vh;
-    text-align: center;
-    line-height: 30px;
+  text-shadow: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .MainTop_section_title {
-    font-size: 41px;
-    text-shadow: 5px 3px 4px #000000;
-    margin-top: 70px;
-    font-weight: bold;
+  font-size: 41px;
+  text-shadow: 5px 3px 4px #000000;
+  margin-top: 70px;
+  font-weight: bold;
 }
 
 .rabotnoVreme {
-    color: white;
-    font-weight: bold;
-    text-shadow: 5px 3px 4px #000000;
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 3px 4px #000000;
 }
-
-.rabotnoVreme:nth-child(5){
-    font-size: larger;
+.rabotnoVreme:nth-child(5) {
+  font-size: larger;
 }
 
 #img_products {
-    height: 350px;
+  height: 350px;
 }
 
 .title {
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #323232;
-    font-size: 3em;
-    padding-bottom: 15px;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #323232;
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-#what_we_offer h2{
-    margin-top: 8vh;
-    margin-bottom: 2vh;
-    font-weight: bold;
+#what_we_offer h2 {
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+#what_we_offer .container .reveal .row {
+  margin: 0.3vw 0 0.3vw 0;
+}
+#what_we_offer .container .reveal .row #opisanie_palaski {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#what_we_offer .container .reveal .row #opisanie_palaski p {
+  text-align: right;
+  font-size: 18px;
+}
+#what_we_offer .container .reveal .row .col-md-12 strong {
+  font-size: 20px;
+}
+#what_we_offer .container .reveal div #predlagame_ranici {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#what_we_offer .container .reveal div #predlagame_ranici p {
+  text-align: left;
+  font-size: 18px;
+}
+#what_we_offer .container .row #opisanie_kufari {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#what_we_offer .container .row #opisanie_kufari p {
+  text-align: right;
+  font-size: 18px;
+}
+#what_we_offer strong {
+  font-size: 27px;
 }
 
-#what_we_offer .container .reveal .row{
-    margin: 0.3vw 0 0.3vw 0;
+.row .col-md-8 h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 10vh 0;
 }
-
-#what_we_offer .container .row #opisanie_kufari,#what_we_offer .container .reveal div #predlagame_ranici,  #what_we_offer .container .reveal .row #opisanie_palaski{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.row .col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#what_we_offer .container .row #opisanie_kufari p{
-    text-align: right;
-    font-size: 18px;
-}
-
-#what_we_offer .container .reveal div #predlagame_ranici p{
-    text-align: left;
-    font-size: 18px;
-
-}
-
-#what_we_offer .container .reveal .row .col-md-12 strong{
-	font-size: 20px;
-}
-
-.row .col-md-8 h1{
-	color: rgb(255, 255, 255);
-	font-weight: bold;
-	margin: 10vh 0;
-}
-
-.row .col-md-4{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.row .col-md-4 button{
- 	border: none;
-	font-weight: bold;
-	font-size: 1.3vw;
-	border-radius:  50px;
-}
-
-#what_we_offer strong{
-    font-size:  27px;
-}
-
-#what_we_offer .container .reveal .row #opisanie_palaski p{
-    text-align: right;
-    font-size: 18px;
+.row .col-md-4 button {
+  border: none;
+  font-weight: bold;
+  font-size: 1.3vw;
+  border-radius: 50px;
 }
 
 .zaglavie_products {
-    margin-top: 80px;
-    margin-bottom: 50px !important;
-    color: #323232;
-    font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 50px !important;
+  color: #323232;
+  font-weight: bold;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 82, 59, 0.3098039216);
 }
 
 ::selection {
-    background-color: #ff523b4f;
-}
-
-.title::after {
-    content: '';
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  background-color: rgba(255, 82, 59, 0.3098039216);
 }
 
 h2 {
-    color: aliceblue;
-    font-weight: normal;
+  color: aliceblue;
+  font-weight: normal;
 }
 
 .rating .fa {
-    color: #ff523f;
+  color: #ff523f;
 }
 
 .product {
-    transition: transform 0.5s;
+  transition: transform 0.5s;
 }
-
 .product:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
-
-
-/*  footer  */
 
 .footer {
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14;
-    padding: 60px 0 20px;
-    box-shadow: 0 -7px 12px -5px rgb(0 0 0 / 50%);
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14;
+  padding: 60px 0 20px;
+  box-shadow: 0 -7px 12px -5px rgba(0, 0, 0, 0.5);
 }
-
-
-/* brands */
 
 .brands {
-    margin: 50px auto;
+  margin: 50px auto;
 }
-
 .brands img {
-    width: 160px;
-    cursor: pointer;
+  width: 160px;
+  cursor: pointer;
 }
 
 .offer {
-    background: radial-gradient(#fff, rgba(240, 61, 29, 0.500));
-    background: radial-gradient(circle, rgba(255, 29, 29, 0.404) 0%, rgba(253, 49, 49, 0.411) 57%, rgba(252, 139, 69, 0.418) 98%);
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
-    margin-top: 80px;
+  background: radial-gradient(#fff, rgba(240, 61, 29, 0.5));
+  background: radial-gradient(circle, rgba(255, 29, 29, 0.404) 0%, rgba(253, 49, 49, 0.411) 57%, rgba(252, 139, 69, 0.418) 98%);
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.63);
+  margin-top: 80px;
 }
 
 .cherveno {
-    background: radial-gradient(#fff, rgba(240, 61, 29, 0.623));
-    background: radial-gradient(circle, rgba(255, 29, 29, 0.575) 0%, rgba(253, 49, 49, 0.562) 57%, rgba(252, 139, 69, 0.63) 98%);
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+  background: radial-gradient(#fff, rgba(240, 61, 29, 0.623));
+  background: radial-gradient(circle, rgba(255, 29, 29, 0.575) 0%, rgba(253, 49, 49, 0.562) 57%, rgba(252, 139, 69, 0.63) 98%);
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.63);
 }
 
 #sv {
-    padding: 2.7vh 2vw;
-    transition: 0.25s ease-in-out;
+  padding: 2.7vh 2vw;
+  transition: 0.25s ease-in-out;
 }
-
 #sv:hover {
-    background-color: #323232;
-    color: white;
+  background-color: #323232;
+  color: white;
 }
 
 #svTxt {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 small {
-    color: #555;
+  color: #555;
 }
 
 .offer-img {
-    margin-top: 75px;
+  margin-top: 75px;
 }
-
-
-/* Тestimonial */
 
 .testimonial {
-    padding-top: 100px;
+  padding-top: 100px;
 }
-
 .testimonial img {
-    width: 60px;
-    margin-top: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
+  width: 60px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.63);
 }
 
 .mneniq {
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-    width: 90%;
-    height: 400px;
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 40%);
-    border-radius: 6%;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  width: 90%;
+  height: 400px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 6%;
+}
+.mneniq:hover {
+  transform: translateY(-10px);
 }
 
 .frame {
-    box-shadow: 0 0 9px 2px rgb(0 0 0 / 35%);
-}
-
-.mneniq:hover {
-    transform: translateY(-10px);
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.35);
 }
 
 .mnenie1 {
-    margin-top: 35px;
+  margin-top: 35px;
 }
-
-
-/*  Media  */
 
 @media (max-width: 1400px) {
-    .MainTop_Section_Background  {
-        height: min-content !important;
-        background-position-x: -5vw !important;
-        background-position-y: 0vh;
-    }
-    #svTxt {
-        font-size: 3vw;
-    }
-    #sv {
-        font-size: 2vw !important;
-    }
+  .MainTop_Section_Background {
+    height: -webkit-min-content !important;
+    height: -moz-min-content !important;
+    height: min-content !important;
+    background-position-x: -5vw !important;
+    background-position-y: 0vh;
+  }
+  #svTxt {
+    font-size: 3vw;
+  }
+  #sv {
+    font-size: 2vw !important;
+  }
 }
-
 @media (max-width: 991px) {
-    .title {
-        font-size: 2.1em;
-    }
-    .MainTop_section_title {
-        font-size: 2.2em;
-        margin: 0;
-        margin-top: 7px;
-        padding: 0;
-    }
-    .mein {
-        margin: 0;
-        margin-top: 5vh;
-        text-align: center;
-    }
-    .brands {
-        margin: 10px auto;
-    }
-    .productName {
-        font-size: 22px;
-    }
-    .offer {
-        text-align: center;
-    }
-    .kufari {
-        margin-bottom: 10px;
-        margin-top: 50px;
-    }
-    .zaglavie_products {
-        margin-top: 50px !important;
-        margin-bottom: 25px;
-    }
-    #img_products {
-        height: auto;
-    }
-    .mneniq {
-        width: 100% !important;
-    }
+  .title {
+    font-size: 2.1em;
+  }
+  .MainTop_section_title {
+    font-size: 2.2em;
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
+  }
+  .mein {
+    margin: 0;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .brands {
+    margin: 10px auto;
+  }
+  .productName {
+    font-size: 22px;
+  }
+  .offer {
+    text-align: center;
+  }
+  .kufari {
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  .zaglavie_products {
+    margin-top: 50px !important;
+    margin-bottom: 25px;
+  }
+  #img_products {
+    height: auto;
+  }
+  .mneniq {
+    width: 100% !important;
+  }
 }
-
 @media (max-width: 766px) {
-    .mneniq {
-        width: 65% !important;
-    }
-    #sv {
-        font-size: 2.6vw !important;
-        margin-bottom: 60px;
-    }
-    #svTxt {
-        font-size: 4.4vw;
-        text-align: center;
-    }
-    .reverse {
-        display: flex !important;
-        flex-direction: column-reverse !important;
-    }
-    #desk {
-        margin-bottom: 60px !important;
-        text-align: center !important;
-    }
+  .mneniq {
+    width: 65% !important;
+  }
+  #sv {
+    font-size: 2.6vw !important;
+    margin-bottom: 60px;
+  }
+  #svTxt {
+    font-size: 4.4vw;
+    text-align: center;
+  }
+  .reverse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  #desk {
+    margin-bottom: 60px !important;
+    text-align: center !important;
+  }
 }
-
 @media (max-width: 576px) {
-
-    #desk{
-        margin-top: 110px ;
-    }
-
-    .product {
-        width: 50% !important;
-        height: 50% !important;
-    }
-    .productName {
-        font-size: 17px !important;
-    }
-    .mneniq {
-        width: 85% !important;
-    }
-    .frame {
-        height: 350px;
-    }
-    .mnenie1 {
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-    }
-    .MainTop_section_title {
-        font-size: 7vw;
-    }
-    .mestopol_button {
-        padding: 16px 11px !important;
-        font-size: 4.6vw !important;
-    }
-    .navBigBags {
-        padding: 0 !important;
-        font-size: 28px !important;
-    }
-    .offer {
-        padding-top: 0 !important;
-        margin-top: 30px !important;
-    }
-    .zaglavie_products {
-        font-size: 2.1em;
-    }
-    #titanFlash {
-        font-size: 29px;
-    }
-    .offer-img {
-        margin-top: 20px !important;
-    }
-    .testimonial {
-        padding-top: 60px;
-    }
-    .mneniq {
-        height: 96% !important;
-    }
-    #sv {
-        font-size: 5vw !important;
-        margin-bottom: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    #svTxt {
-        font-size: 8vw;
-        text-align: center;
-    }
-}
+  #desk {
+    margin-top: 110px;
+  }
+  .product {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .productName {
+    font-size: 17px !important;
+  }
+  .mneniq {
+    width: 85% !important;
+    height: 96% !important;
+  }
+  .frame {
+    height: 350px;
+  }
+  .mnenie1 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .MainTop_section_title {
+    font-size: 7vw;
+  }
+  .mestopol_button {
+    padding: 16px 11px !important;
+    font-size: 4.6vw !important;
+  }
+  .navBigBags {
+    padding: 0 !important;
+    font-size: 28px !important;
+  }
+  .offer {
+    padding-top: 0 !important;
+    margin-top: 30px !important;
+  }
+  .zaglavie_products {
+    font-size: 2.1em;
+  }
+  #titanFlash {
+    font-size: 29px;
+  }
+  .offer-img {
+    margin-top: 20px !important;
+  }
+  .testimonial {
+    padding-top: 60px;
+  }
+  #sv {
+    font-size: 5vw !important;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #svTxt {
+    font-size: 8vw;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
