@@ -39,7 +39,7 @@ header {
 	opacity: 1;
 }
 .MainTop_Section_Background {
-	background-image: url('images/magazin.jpg');
+	background-image: url('../images/magazin.jpg');
 	box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
 	background-size: cover;
 	background-position-y: -30vh;
@@ -87,9 +87,6 @@ img {
 	&:nth-child(5) {
 		font-size: larger;
 	}
-}
-#img_products {
-	height: 350px;
 }
 .title {
 	text-align: center;
@@ -190,6 +187,31 @@ img {
 	color: #323232;
 	font-weight: bold;
 }
+
+.container-md{
+	.row{
+		text-align: center;
+		.col-sm-3{
+			margin-top: 15px;
+			margin-bottom: 10px;
+			.reveal a img{
+				border-radius: 10px;
+				box-shadow: 0 0 9px 2px rgb(0 0 0 / 50%);
+				height: 350px;
+			}
+
+			p{
+				font-size: 15px;
+			}
+
+			.reveal h4{
+				margin-top: 10px;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
 ::selection {
 	background-color: #ff523b4f;
 }
@@ -206,6 +228,23 @@ h2 {
 	transition: transform 0.5s;
 	&:hover {
 		transform: translateY(-6px);
+	}
+}
+.offer{
+	.container-lg .row{
+		.col-lg-6:nth-child(2){
+			margin: auto 0;
+			display: block;
+		}
+		.col-lg-6{
+			p{
+				margin-top: 30px;
+			}
+			h1{
+				font-weight: 700;
+				color: #323232;
+			}
+		}
 	}
 }
 .footer {
@@ -258,6 +297,18 @@ small {
 		border-radius: 50%;
 		box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%);
 	}
+
+	.container-lg .col-md-4{
+		margin-top: 30px;
+		.reveal .mneniq{
+			margin: 0 auto; display: block;
+			h4{
+				color: black;
+				font-size: 20px;
+				margin-top: 12px;
+			}
+		}
+	}
 }
 .mneniq {
 	padding: 40px 20px;
@@ -309,9 +360,6 @@ small {
 	.brands {
 		margin: 10px auto;
 	}
-	.productName {
-		font-size: 22px;
-	}
 	.offer {
 		text-align: center;
 	}
@@ -323,9 +371,11 @@ small {
 		margin-top: 50px !important;
 		margin-bottom: 25px;
 	}
-	#img_products {
+
+	.container-md .row .col-sm-3 .reveal a img{
 		height: auto;
 	}
+
 	.mneniq {
 		width: 100% !important;
 	}
@@ -359,8 +409,9 @@ small {
 		width: 50% !important;
 		height: 50% !important;
 	}
-	.productName {
-		font-size: 17px !important;
+
+	.container-md .row .col-sm-3 .reveal h4{
+		font-size: 17px;
 	}
 	.mneniq {
 		width: 85% !important;
