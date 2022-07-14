@@ -9,13 +9,15 @@ const opisanie_palaski = document.getElementById('opisanie_palaski')
 
 
 
-window.onload =  ()=>{
+window.onload = ()=>{
     setTimeout(()=>{
         const first_product = document.getElementById('what_we_offer')
         first_product.classList.add('active')
     }, 300)
-}
 
+    const windowHref = window.location.href.split('').reverse().join('')
+    if(windowHref.substring(0, 4) == 'lmth') location.href = '/'
+}
 
 
 window.addEventListener('scroll', () =>{
