@@ -1,6 +1,6 @@
-A website for a store or a shop. The theme of which are bags, suitcases, backpacks...
+#### A website for a store or a shop. The theme of which are bags, suitcases, backpacks...
 
-[Click here for the website.](http://bojkoburgas.eu5.net/index.html)  
+[Click here for the website.](http://bigbags-burgas.eu5.net/)  
 
 ---
 
